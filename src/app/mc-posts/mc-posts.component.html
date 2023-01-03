@@ -1,0 +1,21 @@
+<div><button (click)="clickToCapture()">capture</button></div>
+<div id="content-container">
+<div id="content">
+  <div id="content-header">
+    <div id="content-header-logo">
+      <input type="file" accept="image/*" (change)="readUrl($event.target,0)"/>
+      <img  #logo src="/assets/7.jpg" alt="logo" />
+    </div>
+    <div id="content-header-text">
+      <input type="file" accept="image/*" (change)="readUrl($event.target,1)"/>
+      <img  #headerText src="/assets/7.jpg" alt="logo" />
+    </div>
+  </div>
+  <div id="content-main">
+    <table id="content-main-table">
+      <tr><th contenteditable="true"></th></tr>
+      <tr><td contenteditable="true"></td></tr>
+    </table>
+  </div>
+</div>
+</div>
